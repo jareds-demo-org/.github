@@ -1,0 +1,3 @@
+# Jared's Magical Demo Organization
+
+it's cool... for testing...
