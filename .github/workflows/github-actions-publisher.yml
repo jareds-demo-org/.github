@@ -23,8 +23,9 @@ jobs:
         with:
           repository: ${{ github.repository_owner }}/${{ matrix.target_repo }}
           path: ${{ matrix.target_repo }}
-          token: ${{ secrets.RW_REPO}}
           ref: master
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+          fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
       - name: Update Actions
         shell: bash
         run: |
