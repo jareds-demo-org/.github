@@ -46,4 +46,4 @@ jobs:
           directory: ./${{ matrix.target_repo }}
           repository: ${{ github.repository_owner }}/${{ matrix.target_repo }}
           branch: main
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ JAREDS_MINION_PAT }}
