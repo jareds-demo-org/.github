@@ -4,6 +4,7 @@ on:
    branches: [ 'main' ]
    paths:
    - 'templates/**'
+ workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 jobs:
   publish-workflow-template:
     runs-on: ubuntu-latest
