@@ -1,1 +1,3 @@
-# .github
+# Jared's Demo Organization
+
+It is magical...
