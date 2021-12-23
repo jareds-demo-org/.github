@@ -35,8 +35,7 @@ jobs:
       - name: Publish workflows
         shell: bash
         run: |
-          git config --local user.email "cs-minion@carbynestack.io"
-          git config --local user.name "cs-minion"
+          git config --local user.name "jareds-minion"
           git add .
           git commit -m "Updating GitHub Actions from the origanization .github repo"
         working-directory: ./${{ matrix.target_repo }}
