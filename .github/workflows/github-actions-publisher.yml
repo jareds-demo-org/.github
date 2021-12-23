@@ -43,4 +43,5 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
+          directory: ./${{ matrix.target_repo }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
